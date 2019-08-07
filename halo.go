@@ -6,7 +6,7 @@ import "fmt"
 const NAME = "GO"
 
 //全局var
-var addr = "dd g"
+var userId = "dd g"
 
 /*
 多行注释
@@ -14,6 +14,7 @@ var addr = "dd g"
 */
 func main() {
 	fmt.Println("halo")
-	fmt.Print(addr)
+	fmt.Print(userId)
 	fmt.Print(NAME)
+
 }
