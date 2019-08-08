@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"reflect"
 	"unsafe"
 )
 
@@ -43,5 +44,9 @@ func main() {
 	type xc int32
 	var ty xc = 23
 	fmt.Println(ty)
-
+	fmt.Println(reflect.TypeOf(ty)) //main.xc  获取var的类型
+	fmt.Println(unsafe.Sizeof(ty))  //4
+	//别名类型不可额原类型的var进行计算
+	//ty+i04;
+	fmt.Println(unsafe.Sizeof(2)) //8
 }
