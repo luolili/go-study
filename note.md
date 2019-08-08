@@ -9,4 +9,4 @@ go run halo.go: 执行/运行go文件
 先导入依赖包，在初始化main包里面的变量，最后执行main函数。
 
 3. 不能自动导入自定义的包？
-要把gopath的路径设置为项目的路径
+要把project gopath的路径设置为项目的路径:H:\gopro\go-study

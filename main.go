@@ -7,5 +7,5 @@ import (
 
 func main() {
 	fmt.Println("halo")
-	show.Show()
+	show.Show() //调用自定义的包
 }

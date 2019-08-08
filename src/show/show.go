@@ -1,5 +1,7 @@
 package show
 
-func Show() {
+import "fmt"
 
+func Show() {
+	fmt.Println("show--")
 }
