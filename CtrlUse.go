@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"time"
 )
 
 //控制语句
@@ -19,7 +20,6 @@ func main() {
 		fmt.Println("---")
 
 	case 2:
-
 		fmt.Println("+++")
 	default:
 		fmt.Println("CCC")
@@ -59,4 +59,34 @@ func main() {
 		//fmt.Println(key)//从0开始的索引
 		fmt.Println(value) //元素值
 	}
+
+	goto One
+	fmt.Println("---") //被跳过
+One:
+	fmt.Println("cc")
+
+	//break
+	for {
+		fmt.Println("p")
+		time.Sleep(2 * time.Second)
+		break //只打印了一个p
+	}
+
+	for i := 1; i < 3; i++ {
+		for j := 1; j < 3; j++ {
+			fmt.Println("vv")
+			time.Sleep(2 * time.Second)
+			break
+		}
+	}
+
+	for i := 1; i < 3; i++ {
+		if i >= 1 {
+			fmt.Println("ff")
+			time.Sleep(1 * time.Second)
+			continue //不会执行fmt.Println("last")
+		}
+		fmt.Println("last")
+	}
+
 }
