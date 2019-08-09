@@ -13,7 +13,7 @@ const HU string = "ff bg"
 const PI float32 = 3.14
 
 const app, ban, num = "fr", "te", 21
-
+const applen = len(app)
 const IS_OPEN = true
 
 func main() {
@@ -40,4 +40,5 @@ func main() {
 	age01 := float32(age)
 	fmt.Println(age01)
 	fmt.Println(reflect.TypeOf(age01)) //float32
+	fmt.Println(applen)                //2
 }
