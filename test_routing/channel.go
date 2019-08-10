@@ -10,11 +10,17 @@ func Sum(var1, var2 int, quit chan bool) {
 
 }
 func main() {
+	//申请10个slice
 	channels := make([]chan bool, 10)
 
 	for i := 0; i < 10; i++ {
 		channels[i] = make(chan bool)
-		go Sum(i, i, channels[i])
+		go Sum(i, i, channels[i]) //向channel写数据
+	}
+
+	//获取chanel里面的数据
+	for _, v := range channels {
+		<-v
 	}
 
 }
