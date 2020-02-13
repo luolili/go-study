@@ -8,6 +8,9 @@ import (
 
 func main() {
 	str := "hello wo"
+	// 拼接字符串
+	res := fmt.Sprintf("%s%s", "ha", "woo")
+	fmt.Println(res)
 	fmt.Println(strings.Contains(str, "wo"))
 	fmt.Println(strings.Index(str, "l")) //2
 	fmt.Println(strings.HasPrefix(str, "hel"))

@@ -21,6 +21,7 @@ func buildTree(root *TreeNode, res *[]int) []int {
 		if root.Left != nil {
 			buildTree(root.Left, res)
 		}
+		// 切片：没有固定的长度
 		*res = append(*res, root.Value)
 		if root.Right != nil {
 			buildTree(root.Right, res)

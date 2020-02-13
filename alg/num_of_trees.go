@@ -1,7 +1,12 @@
 package main
 
+import "fmt"
+
 func main() {
 
+	str := "f" + "d"
+	panic(2)
+	fmt.Println(str)
 }
 func numTrees(n int) int {
 	var dp = make([]int, n+1)
