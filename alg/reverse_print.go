@@ -25,7 +25,6 @@ func reversePrint(head *ListNode) []int {
 	return res
 }
 func reverseLinkedListV2(head *ListNode) *ListNode {
-
 	if head == nil || head.Next == nil {
 		return head
 	}
