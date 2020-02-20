@@ -23,3 +23,15 @@ func isUnique(astr string) bool {
 	}
 	return true
 }
+func firstUniqueChar(astr string) byte {
+	//遍历 string 获得里面的字符
+	for _, ch1 := range astr {
+		s := string(ch1)
+		index1 := strings.Index(astr, s)
+		index2 := strings.LastIndex(astr, s)
+		if index1 == index2 {
+			return byte(ch1)
+		}
+	}
+	return ' '
+}
