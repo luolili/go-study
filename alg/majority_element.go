@@ -4,7 +4,7 @@ func main() {
 
 }
 
-// 摩尔投票法
+// 摩尔投票法：出现次数最多的元素
 func majorityElementV2(nums []int) int {
 	target := 0
 	count := 0
