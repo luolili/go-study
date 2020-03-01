@@ -9,6 +9,7 @@ func maxDepthV2(root *TreeNode) int {
 	if root == nil {
 		return 0
 	}
+	// 创建数组
 	q := []*TreeNode{root}
 	var level = 0
 	for len(q) > 0 {
@@ -22,7 +23,6 @@ func maxDepthV2(root *TreeNode) int {
 			if node.Right != nil {
 				q = append(q, node.Right)
 			}
-
 		}
 		level++
 	}
